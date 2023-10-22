@@ -1,4 +1,4 @@
-#car resale price predictor   
+#car resale price predictor </br>  
 Machine learning project</br>  
 In this project I have created a model which predicts the resale value of car using car company, car name, year of manufacturing, KMs driven and fuel type.</br>    
 I have created the web UI of this page using Streamlit and deployed it on the streamlit server</br>    
