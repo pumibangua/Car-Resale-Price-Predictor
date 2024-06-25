@@ -77,7 +77,7 @@ from sklearn.pipeline import make_pipeline
 ohe=OneHotEncoder()
 ohe.fit(x[['name','company','fuel_type']])
 
-columns=make_column_transformer((OneHotEncoder(categories=ohe.categories_),['name','company','fuel_type']),remainder='passthrough')
+columns=make_column_transformer((OneHotEncoder(categories=ohe.categories_),['name','company','fuel_type']),remainder='passthrough',force_int_remainder_cols=False)
 
 model=LinearRegression()
 
